@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_login_account" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffcccccc" android:gravity="center_vertical" android:id="@id/phone_num" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/prompt_register_mobile_empty" android:layout_weight="1.0" />
+        <ImageView android:id="@id/phone_right_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/arrow" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_review_address_name" />
+        <EditText android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/name" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/prompt_name" android:layout_weight="1.0" />
+        <Button android:textSize="15.0sp" android:gravity="center_vertical" android:id="@id/lady" android:background="@drawable/ic_sex_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lady" />
+        <Button android:textSize="15.0sp" android:gravity="center_vertical" android:id="@id/sir" android:background="@drawable/ic_sex_right_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sir" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_address" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/area_address" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/arrow" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="门牌号：" />
+        <EditText android:textSize="18.0sp" android:textColor="#ff000000" android:textColorHint="#ffbfbfbf" android:id="@id/address" android:background="@null" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:hint="请填写门牌号等详细地址信息" android:singleLine="true" android:inputType="textPersonName" />
+    </LinearLayout>
+</LinearLayout>

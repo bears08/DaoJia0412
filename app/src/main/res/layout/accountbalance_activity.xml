@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff3f4f4"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_white" />
+
+    <include
+        android:id="@+id/loading_layout"
+        layout="@layout/loading_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10.0dip"
+                    android:paddingLeft="8.0dip"
+                    android:paddingTop="10.0dip">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="当前用户余额:" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.0dip"
+                            android:text="¥"
+                            android:textColor="@color/red"
+                            android:textSize="30.0sp" />
+
+                        <TextView
+                            android:id="@id/tv_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.0dip"
+                            android:text="100.00"
+                            android:textColor="@color/red"
+                            android:textSize="30.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/tv_moneyan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="bottom|center|right"
+                    android:paddingRight="30.0dip"
+                    android:text="+50.00"
+                    android:textColor="#ffdd004f"
+                    android:textSize="30.0sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff3f4f4"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@id/bton_recharge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="41.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/login_button_selector"
+                    android:text="在线充值"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@id/ll_giftcard"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:background="@drawable/list_item_pressed"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0.0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_weight="1.0"
+                            android:text="礼品卡充值"
+                            android:textColor="#ff000000"
+                            android:textSize="17.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10.0sp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@id/v_line1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/line" />
+
+                    <LinearLayout
+                        android:id="@id/ll_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:background="@drawable/list_item_pressed"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0.0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_weight="1.0"
+                            android:text="短信验证支付"
+                            android:textColor="#ff000000"
+                            android:textSize="17.0sp" />
+
+                        <TextView
+                            android:id="@id/tv_isopen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:text="关闭"
+                            android:textColor="#ffcccccc"
+                            android:textSize="14.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10.0sp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@id/v_line2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/line" />
+
+                    <LinearLayout
+                        android:id="@id/ll_changepaypassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:background="@drawable/list_item_pressed"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0.0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15.0dip"
+                            android:layout_marginRight="15.0dip"
+                            android:layout_weight="1.0"
+                            android:text="找回支付密码"
+                            android:textColor="#ff000000"
+                            android:textSize="17.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10.0sp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

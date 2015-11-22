@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/login_list1" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_register_name" />
+                <EditText android:id="@id/male" android:background="@android:color/white" android:nextFocusDown="@id/mobile" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:hint="@string/label_register_omit" android:maxLength="6" android:layout_weight="1.0" android:inputType="text" android:textCursorDrawable="@drawable/cursor" />
+                <TextView android:textSize="17.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/label_register_female" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/regist" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_register_or" />
+                <EditText android:id="@id/female" android:background="@android:color/white" android:nextFocusDown="@id/mobile" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:hint="@string/label_register_omit" android:maxLength="6" android:layout_weight="1.0" android:inputType="text" android:textCursorDrawable="@drawable/cursor" />
+                <TextView android:textSize="17.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/label_register_male" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/regist" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_register_mobile" />
+                <EditText android:id="@id/mobile" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:maxLength="11" android:layout_weight="1.0" android:inputType="phone" android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/regist" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_register_passwd" />
+                <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/passwd" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:hint="@string/label_register_passwd_hint" android:layout_weight="1.0" android:inputType="textPassword" android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/login_list2" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_register_confirm" android:maxLength="8" />
+                <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/confirm" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:hint="@string/label_register_confirm_hint" android:layout_weight="1.0" android:inputType="textPassword" android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/code" android:background="@drawable/login_button_selector" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="27.0dip" android:layout_marginRight="10.0dip" android:text="@string/label_register_getcode" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffe72b48" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <EditText android:textSize="16.0sp" android:textColorHint="#ffbfbfbf" android:ellipsize="end" android:id="@id/keyword" android:background="@drawable/ic_search_bg" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:hint="@string/prompt_restaurant_keyword_empty" android:singleLine="true" android:drawableLeft="@drawable/magnifier" android:layout_weight="1.0" android:imeOptions="actionSearch" />
+        <Button android:textColor="@android:color/white" android:layout_gravity="center|right" android:id="@id/back_button" android:background="@drawable/suggest_right_button_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/title_cancel" />
+    </LinearLayout>
+    <GridView android:id="@id/serach_cansee" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="3" />
+</LinearLayout>

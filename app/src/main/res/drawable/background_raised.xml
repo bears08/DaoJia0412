@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="0.0px" android:top="0.0px" android:right="0.0px" android:bottom="0.0px">
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:dither="true" android:startColor="#11000000" android:endColor="#77000000" android:angle="270.0" android:centerX="0.96" android:centerColor="#11000000" />
+            <corners android:radius="6.0dip" />
+        </shape>
+    </item>
+    <item android:left="0.0px" android:top="0.0px" android:right="0.0px" android:bottom="0.0px">
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:dither="true" android:startColor="#11000000" android:endColor="#88000000" android:angle="0.0" android:centerY="0.99" android:centerColor="#11000000" />
+            <corners android:radius="6.0dip" />
+        </shape>
+    </item>
+    <item android:left="0.0px" android:top="0.0px" android:right="1.0dip" android:bottom="1.0dip">
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:dither="true" android:startColor="#11000000" android:endColor="#55aaaaaa" android:angle="90.0" android:centerX="0.97" android:centerColor="#11000000" />
+            <corners android:radius="6.0dip" />
+        </shape>
+    </item>
+    <item android:left="0.0px" android:top="0.0px" android:right="1.0dip" android:bottom="1.0dip">
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:dither="true" android:startColor="#11000000" android:endColor="#55bbbbbb" android:angle="180.0" android:centerY="0.99" android:centerColor="#11000000" />
+            <corners android:radius="6.0dip" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/BDark" android:gravity="center" android:id="@id/textView" android:background="@drawable/no_selectedk" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_marginTop="5.0dip" android:text="的撒" />
+    <ImageView android:id="@id/selceted" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="-12.0dip" android:src="@drawable/selectedbad" android:layout_toRightOf="@id/textView" android:layout_alignParentTop="true" />
+</RelativeLayout>

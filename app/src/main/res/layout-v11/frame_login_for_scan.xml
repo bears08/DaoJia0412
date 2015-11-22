@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/login_navigation" />
+    <LinearLayout android:background="@drawable/ic_list" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/account" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="@string/prompt_account" android:maxLength="11" android:layout_weight="1.0" android:inputType="phone" android:imeOptions="actionNext" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/have_daojia_vip_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textColor="#ffbfbfbf" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/label_login_vip_notify" style="@style/LoginFieldLabelStyle" />
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/ic_list" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/passwd" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="@string/prompt_password" android:layout_weight="1.0" android:inputType="textPassword" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="27.0dip" android:layout_marginRight="10.0dip">
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/login" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/label_login_logon" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="27.0dip" android:layout_marginRight="10.0dip">
+            <Button android:textSize="16.0sp" android:textColor="#ff1b1b1b" android:id="@id/forget" android:background="@drawable/login_findpsw_button_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/label_login_forget_password" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/not_daojia_vip_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textColor="#ffbfbfbf" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/label_login_not_vip_notify" style="@style/LoginFieldLabelStyle" />
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/ic_list" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/name" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="@string/prompt_name" android:singleLine="true" android:maxLength="6" android:layout_weight="1.0" />
+            <Spinner android:id="@id/gender_spinner" android:background="@drawable/spinner" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/passwd2" android:background="@drawable/ic_list" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/reg_psw" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="@string/prompt_password" android:layout_weight="1.0" android:inputType="textPassword" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/code_num" android:background="@drawable/ic_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/code_num_edit" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="@string/label_register_code_hint" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/register_getcode_layout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="27.0dip" android:layout_marginRight="10.0dip">
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/register_getcode" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/label_register_getcode" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/register_login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="27.0dip" android:layout_marginRight="10.0dip">
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/register_login_button" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="完成注册" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

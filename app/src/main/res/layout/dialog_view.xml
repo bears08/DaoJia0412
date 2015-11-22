@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/navigation_bar" android:layout_width="wrap_content" android:layout_height="52.0dip">
+        <ImageView android:gravity="center" android:id="@id/leftX" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_select_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="21.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/food_name" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="菜品名字" android:layout_toLeftOf="@id/select_close" android:layout_toRightOf="@id/leftX" android:layout_centerInParent="true" />
+        <ImageView android:gravity="center" android:id="@id/select_close" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_select_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/photo_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="180.0dip">
+                <ImageView android:id="@id/photo" android:background="@drawable/image_rectangle_shape" android:padding="0.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <ImageView android:layout_gravity="center" android:id="@id/indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_progress" />
+            </FrameLayout>
+            <TextView android:textColor="#ffbfbfbf" android:id="@id/foodRemark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="菜品详情" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:paddingTop="19.0dip" android:paddingBottom="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                <TextView android:textSize="19.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单价：" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffbfbfbf" android:gravity="right" android:id="@id/unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/quantity_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <Button android:id="@id/dec" android:background="@drawable/dec_selector" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+                <TextView android:textSize="19.0sp" android:textColor="#ffff0000" android:id="@id/quantity" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <Button android:id="@id/add" android:background="@drawable/add_selector" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:id="@id/back_address_layout" android:paddingTop="19.0dip" android:paddingBottom="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/back_food" android:background="@drawable/login_button_selector" android:layout_width="fill_parent" android:layout_height="41.0dip" android:text="返回首页开始点餐" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

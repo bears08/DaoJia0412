@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/close" android:background="@drawable/close" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="27.0dip" android:src="@drawable/login_logo" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/login_list1" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="手机 : " />
+        <EditText android:textSize="15.0sp" android:textColor="#ffbfbfbf" android:layout_gravity="center_vertical" android:id="@id/account" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/prompt_account" android:maxLength="11" android:inputType="phone" android:imeOptions="actionNext" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/login_list2" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="密码 : " />
+        <EditText android:textSize="15.0sp" android:textColor="#ffbfbfbf" android:layout_gravity="center_vertical" android:id="@id/passwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/prompt_password" android:inputType="textPassword" />
+    </LinearLayout>
+    <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/login" android:background="@drawable/login_button_selector" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="25.0dip" android:text="@string/label_login_logon" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ffe72b48" android:id="@id/register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/label_login_quickly_register" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffe72b48" android:id="@id/forget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="@string/label_login_forget_password" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

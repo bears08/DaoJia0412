@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_red" />
+    <com.daojia.widget.PullToRefreshLayout android:id="@id/refresh_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/refresh_head" />
+        <com.daojia.widget.PullableListView android:id="@id/completed_order_list" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#00000000" android:choiceMode="singleChoice" />
+    </com.daojia.widget.PullToRefreshLayout>
+    <include android:id="@id/loading_layout" layout="@layout/loading_layout" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/prompt" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/no_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="58.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/no_order" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff717171" android:id="@id/prompt_cart_empty_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prompt_cart_empty_order" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75.0dip" android:src="@drawable/no_order_arrow" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+</LinearLayout>

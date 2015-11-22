@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <include android:id="@id/loading_layout" layout="@layout/loading_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/noempty" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+        <ListView android:id="@id/lv_balancedetail" android:background="@android:color/white" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/white" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+        <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/no_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:src="@drawable/no_order" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff717171" android:id="@id/prompt_cart_empty_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无余额详情" android:layout_below="@id/no_order" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/exit_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_title" android:background="@drawable/dialog_shape_title_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="提示" />
+    <View android:background="#ffb2b2b2" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/message_layout" android:background="@drawable/dialog_shape_content_bg" android:layout_width="320.0dip" android:layout_height="wrap_content" android:minHeight="100.0dip">
+        <TextView android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_message" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="你的用户名和密码错误请重新输入" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/btn_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:background="#ffb2b2b2" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/dialog_shape_only_one_btn_normal" android:layout_width="320.0dip" android:layout_height="50.0dip">
+            <Button android:textSize="16.0sp" android:textColor="@drawable/dialog_selector_btn_text" android:id="@id/leftBtn" android:background="@drawable/dialog_selector_btn_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+            <View android:background="#ffb2b2b2" android:layout_width="0.30000007dip" android:layout_height="fill_parent" />
+            <Button android:textSize="16.0sp" android:textColor="@drawable/dialog_selector_btn_text" android:id="@id/rightBtn" android:background="@drawable/dialog_selector_btn_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="确定" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/one_btn_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:background="#ffb2b2b2" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="320.0dip" android:layout_height="50.0dip">
+            <Button android:textSize="16.0sp" android:textColor="@drawable/dialog_selector_btn_text" android:id="@id/centerBtn" android:background="@drawable/dialog_selector_only_one_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

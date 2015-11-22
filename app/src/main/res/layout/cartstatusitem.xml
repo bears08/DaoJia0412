@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/orderlineup" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/orderline" android:layout_weight="1.0" />
+        <ImageView android:id="@id/statusimg" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/orderbeginmake" />
+        <ImageView android:id="@id/orderlinedown" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/orderline" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/orderstate" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <TextView android:textSize="17.0sp" android:ellipsize="end" android:id="@id/status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="下单成功" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/statustime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11:20" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/status2" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我们将安排餐厅制作" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/cart_textblue" android:id="@id/deliveryPhone" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12345678" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

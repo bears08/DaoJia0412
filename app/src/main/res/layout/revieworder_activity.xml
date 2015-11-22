@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff3f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top" layout="@layout/navigation_white" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/bton_com" android:background="@drawable/login_button_selector" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" android:text="提交订单" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom" android:layout_below="@id/top">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_address" android:background="@drawable/list_item_pressed" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="请完善地址信息" android:singleLine="true" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffcccccc" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="姓名" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ffcccccc" android:layout_gravity="center_vertical" android:id="@id/tv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="13000000000" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ffcccccc" android:layout_gravity="center_vertical" android:id="@id/tv_nullinfo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="请完善用户信息" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+            </LinearLayout>
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_sendtime" android:background="@drawable/list_item_pressed" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="0.0sp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="送达时间" android:layout_weight="1.0" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/red" android:layout_gravity="center_vertical" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="0:00" />
+                    <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+                </LinearLayout>
+                <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_remark" android:background="@drawable/list_item_pressed" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="送餐备注" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffcccccc" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/tv_remark" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="添加备注" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+                </LinearLayout>
+                <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_invioce" android:background="@drawable/list_item_pressed" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="发票信息" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffcccccc" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/tv_invioce" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_vipcard" android:background="@drawable/list_item_pressed" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="贵  宾  卡" />
+                    <TextView android:textSize="14.0sp" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/tv_vipcard" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="添加贵宾卡" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+                </LinearLayout>
+                <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_favorable" android:background="@drawable/list_item_pressed" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="优        惠" />
+                    <TextView android:textSize="14.0sp" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/tv_favorable" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="选择优惠" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/tv_out" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="@string/label_review_meal_payment" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffcccccc" android:gravity="center_vertical" android:id="@id/tv_outinfo" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="可支付宝、微信扫码或现金支付" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageButton android:id="@id/imbton_outbton" android:background="@drawable/radio_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                </LinearLayout>
+                <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textSize="17.0sp" android:gravity="center_vertical" android:id="@id/tv_on" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="@string/label_review_balance_payment" />
+                    <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/tv_oninfo" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="余额为0，您可以到“我的到家--余额”功能充值" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/red" android:gravity="center_vertical" android:id="@id/tv_input" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:text="去充值" android:singleLine="true" />
+                    <ImageButton android:id="@id/imbton_onbton" android:background="@drawable/radio_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/tv_total" android:layout_width="0.0sp" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="订单合计" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/red" android:layout_gravity="center_vertical" android:id="@id/tv_totalmoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="100元" />
+                </LinearLayout>
+                <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_mfavorable" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffcccccc" android:layout_gravity="center_vertical" android:layout_width="0.0sp" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:text="优    惠" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/red" android:layout_gravity="center_vertical" android:id="@id/tv_favorablemoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="100元" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffcccccc" android:layout_gravity="center_vertical" android:layout_width="0.0sp" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:text="餐    费" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/tv_mealmoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="100元" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffcccccc" android:layout_gravity="center_vertical" android:layout_width="0.0sp" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:text="包装费" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/tv_packingmoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="100元" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="#ffcccccc" android:layout_gravity="center_vertical" android:layout_width="0.0sp" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="15.0dip" android:text="配送费" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/tv_shippingmoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="100元" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

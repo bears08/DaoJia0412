@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/paymentedit_bg" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff000000" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="短信验证金额：" />
+        <EditText android:textSize="14.0sp" android:textColor="#ff858585" android:id="@id/et_money" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="2.0dip" android:numeric="integer" android:layout_weight="1.0" android:inputType="number" android:textCursorDrawable="@drawable/cursor" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_vercode" android:background="@drawable/paymentedit_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/sendverificationcode" android:background="@drawable/login_button_selector" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/label_payment_sendverificationcode" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/et_verificationcode" android:background="@null" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/label_payment_verificationcode" android:singleLine="true" android:layout_toLeftOf="@id/sendverificationcode" android:inputType="number" />
+    </RelativeLayout>
+    <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/bton_comple" android:background="@drawable/login_button_selector" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="完成" />
+</LinearLayout>

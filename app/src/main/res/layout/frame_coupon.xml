@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <include android:id="@id/loading_layout" layout="@layout/loading_layout" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <Button android:id="@id/can_use" android:background="@drawable/ic_title_selecte" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="可用" android:layout_weight="1.0" />
+        <Button android:id="@id/already_use" android:background="@drawable/ic_title_normal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="已用" android:layout_weight="1.0" />
+        <Button android:id="@id/out_of_date" android:background="@drawable/ic_title_normal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="过期" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/list" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/prompt" android:background="@drawable/ic_detail_bg" android:paddingLeft="10.0dip" android:paddingTop="37.0dip" android:paddingRight="10.0dip" android:paddingBottom="30.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_margin="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ffbfbfbf" android:gravity="center" android:id="@id/empty_text" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/prompt_coupon_canuse_empty" />
+    </RelativeLayout>
+</LinearLayout>

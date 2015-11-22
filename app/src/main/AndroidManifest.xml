@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daojia"
+    platformBuildVersionCode="19"
+    platformBuildVersionName="4.4.2-1456859">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.Dean.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.Dean.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.motorola.dlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.motorola.dlauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.motorola.mmsp.motoswitch.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.motorola.mmsp.motoswitch.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.aspire.mm.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.aspire.mm.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ty.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ty.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sonyericsson.homescreen.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.sonyericsson.homescreen.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.mediatek.launcherplus.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.mediatek.launcherplus.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.baiqi.weather.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.baiqi.weather.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="mobi.SyndicateApps.ICS.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="mobi.SyndicateApps.ICS.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.motorola.dock.DesktopDock.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.motorola.dock.DesktopDock.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.thunderst.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.thunderst.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.daojia" />
+    <application
+        android:name="com.daojia.DaojiaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_new"
+        android:label="@string/app_name"
+        android:theme="@style/NavigationAppTheme">
+        <activity
+            android:name="com.daojia.DaoJiaApp"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.daojia.activitys.SelectDeliveryAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.DaojiaAdvertiseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.DaoJiaWebActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.AreaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.BalancePaymentAty"
+            android:screenOrientation="portrait"
+            android:theme="@style/balancepayment_style"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.daojia.activitys.BalancePaymentSuccessAty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.ChooseCity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.AnnouncementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.AccountBalanceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.PayPasswordChange"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.daojia.activitys.ShoppingCartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.daojia.activitys.MessageVerifyPay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.MoneySet"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.daojia.activitys.RestaurantDishActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.DishSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.FoodActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.GiftCardRecharge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.daojia.activitys.BalanceDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.SafeSet"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.daojia.activitys.AccountRecharge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.daojia.activitys.AffirmDishActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.ReviewOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.InputTimeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.InputInvoiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.InputRemarkActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.daojia.activitys.InputVipcardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.daojia.activitys.InputFavorableActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.daojia.activitys.MessageVerifyDialoge"
+            android:screenOrientation="portrait"
+            android:theme="@style/balancepayment_style"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name="com.daojia.activitys.Photo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.GuideActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.InputAddressAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daojia.activitys.Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.LoginForScan"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.Complaint"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.OrderComments"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.OrderCommentsShow"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.HistoryrRestaurantListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.RestaurantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.daojia.activitys.RestaurantSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.Cart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.Home"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.DishesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.baseactivity.DaojiaActivityGroup"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.SetMealMarketActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.Register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.Service"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.Coupon"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.About"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.CardListFragment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.City"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.CouponDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.ChangePassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.Authenticate"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.OrderDetailsNew"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.Food"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.RestaurantInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.HistoryAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daojia.activitys.PmTeaRestaurantActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daojia.photo.PhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daojia.photo.PictureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.photo.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.HomeAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.EditAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.MyAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.daojia.activitys.InviteFriend"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="528187ac56240bee3803bc39" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="xiaomi_app" />
+
+        <receiver android:name="com.daojia.receiver.BdPushMessageReceiver">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+
+        <meta-data
+            android:name="api_key"
+            android:value="2qoGQfsfg5CcB9cU9PXHNBGX" />
+
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="keyboard|orientation"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100735284" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.daojia.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="jGY5Ft6EuDv9gKWT9dg51UOl" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+        <uses-library android:name="android.test.runner" />
+    </application>
+</manifest>

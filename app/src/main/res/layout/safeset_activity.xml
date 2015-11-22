@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:textStyle="normal" android:textColor="#ff98989d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开通余额支付的手机号：" />
+                <TextView android:textStyle="normal" android:textColor="#ff98989d" android:id="@id/tv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13000000000" />
+            </LinearLayout>
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_pressed" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff000000" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付密码：" />
+                    <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/et_paypassward" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:hint="6位字符组成，支持数字和字母" android:layout_weight="1.0" android:inputType="textPassword" />
+                </LinearLayout>
+                <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_pressed" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff000000" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认密码：" />
+                    <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/et_confirmpassword" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:hint="请再次输入密码" android:layout_weight="1.0" android:inputType="textPassword" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_pressed" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="短信验证支付：" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_openmessagever" android:paddingRight="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/chenjin_static_open" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_mesclose" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="#ff98989d" android:gravity="left" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启短信验证后，当您支付的金额超过您设置的短信验证金额时，需要您输入短信验证码才能支付成功，以确保护您的账号安全！" />
+                <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_pressed" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff000000" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="短信验证金额：" />
+                    <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/et_muchmoney" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="150" android:numeric="integer" android:layout_weight="1.0" android:inputType="number" />
+                    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff000000" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="元" />
+                </LinearLayout>
+                <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+            <RelativeLayout android:background="@drawable/paymentedit_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/sendverificationcode" android:background="@drawable/login_button_selector" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/label_payment_sendverificationcode" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:gravity="center_vertical" android:id="@id/et_verificationcode" android:background="@null" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/label_payment_verificationcode" android:singleLine="true" android:layout_toLeftOf="@id/sendverificationcode" android:inputType="number" />
+            </RelativeLayout>
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/bton_com" android:background="@drawable/login_button_selector" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="完成" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

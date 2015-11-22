@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:background="@drawable/radar_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="120.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="90.0dip" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/nodone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon1" android:scaleType="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="90.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="90.0dip" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/nodtow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon4" android:scaleType="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="210.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="110.0dip" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/nodthree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon3" android:scaleType="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="190.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="210.0dip" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/nodfour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon2" android:scaleType="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/infoOperating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/radar_s" android:scaleType="center" />
+    </FrameLayout>
+    <TextView android:textColor="#ff9c9c9c" android:gravity="center_horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="正在搜索周边餐厅..." />
+</LinearLayout>

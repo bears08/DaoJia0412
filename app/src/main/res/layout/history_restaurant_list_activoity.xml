@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <include android:id="@id/include_loading" layout="@layout/loading_layout" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" />
+    <RelativeLayout android:id="@id/rl_emptyprompt" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="#ffbfbfbf" android:gravity="center" android:id="@id/empty_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/home_history_empty" />
+    </RelativeLayout>
+</LinearLayout>

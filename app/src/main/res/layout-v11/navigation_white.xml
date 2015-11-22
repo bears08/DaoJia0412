@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/navigation_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:splitMotionEvents="false">
+        <ImageView android:id="@id/left_button" android:paddingLeft="10.0dip" android:paddingRight="8.0dip" android:focusable="false" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/food_back_selecter" />
+        <TextView android:textSize="21.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_centerInParent="true" />
+        <Button android:textSize="17.0sp" android:gravity="center" android:id="@id/right_button" android:background="@drawable/suggest_right_normal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="false" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/label_done" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lin_layout" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

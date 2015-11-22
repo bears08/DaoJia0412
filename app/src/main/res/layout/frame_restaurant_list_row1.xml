@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line" android:background="@drawable/line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout" android:background="@drawable/list_item_pressed" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center_vertical" android:background="@drawable/round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                <ImageView android:id="@id/restaurentLogo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/restaurantlogo" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="金百万" android:singleLine="true" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/tags" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <RatingBar android:id="@id/ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:numStars="5" android:rating="3.35" android:stepSize="0.01" android:isIndicator="true" android:layout_centerVertical="true" style="@style/MyRatingBar1" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffa1a1a1" android:id="@id/recentSales" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="近期售  120" android:layout_toRightOf="@id/ratingBar" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_state" android:background="#ff91b755" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="晚餐预订中" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffa1a1a1" android:id="@id/signatureDishes" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="西北菜" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffa1a1a1" android:id="@id/details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥75/人" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffa1a1a1" android:id="@id/deliveryTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffa1a1a1" android:id="@id/startdeliverytime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="17:30开始配送" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

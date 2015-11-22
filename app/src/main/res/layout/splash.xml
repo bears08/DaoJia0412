@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/logo_image" android:layout_width="225.0dip" android:layout_height="152.0dip" android:layout_marginTop="60.0dip" android:src="@drawable/logo" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/solgon" android:layout_width="160.0dip" android:layout_height="wrap_content" android:src="@drawable/solgon" android:layout_below="@id/logo_image" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffe1e1e1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/daojiacopyright" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

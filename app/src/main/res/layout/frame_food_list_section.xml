@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/food_list_item_selector" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffe72b48" android:id="@id/classify_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="addsdsdsdd" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffe72b48" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(17)" />
+</LinearLayout>

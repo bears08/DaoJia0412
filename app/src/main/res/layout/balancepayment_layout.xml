@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/balancepayment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/balancepayment_title_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_payment_enterpasswordforpayment" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/cancel" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/payment_closed" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff010101" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_payment_meals" android:singleLine="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffdf3333" android:id="@id/subtotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="289元" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff010101" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_payment_daojiabalancepayment" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff010101" android:id="@id/daojiabalancepayment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="29元" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff010101" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_payment_mealpayment" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff010101" android:id="@id/mealpayment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="223元" />
+    </LinearLayout>
+    <EditText android:id="@id/et_paypass" android:background="@drawable/paymentedit_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/label_payment_paymentpass" android:singleLine="true" android:inputType="textPassword" />
+    <RelativeLayout android:id="@id/rl_vercode" android:background="@drawable/paymentedit_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/sendverificationcode" android:background="@drawable/login_button_selector" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/label_payment_sendverificationcode" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <EditText android:gravity="center_vertical" android:id="@id/et_verificationcode" android:background="@null" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/label_payment_verificationcode" android:singleLine="true" android:layout_toLeftOf="@id/sendverificationcode" />
+    </RelativeLayout>
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/pay_btn" android:background="@drawable/login_button_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/label_payment_pay" />
+    <TextView android:textSize="18.0sp" android:gravity="right" android:layout_gravity="right" android:id="@id/tv_forgetpassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="忘记支付密码？" />
+</LinearLayout>

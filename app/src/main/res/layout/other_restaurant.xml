@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/otherrestaurantlayout" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <RelativeLayout android:id="@id/bigmeallayout" android:background="@drawable/list_item_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/bigmealframe" android:background="@drawable/round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/bigmealLogo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/restaurantlogo" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/bigmealframe" android:layout_centerVertical="true">
+                <TextView android:textSize="18.0sp" android:textColor="#fffc593e" android:gravity="center" android:id="@id/bigmealtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="美味大牌套餐" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/bigmealdefault" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="@drawable/line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/afternoontealayout" android:background="@drawable/list_item_pressed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/afternoonteaframe" android:background="@drawable/round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/afternoonteaLogo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/restaurantlogo" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/afternoonteaframe" android:layout_centerVertical="true">
+                <TextView android:textSize="18.0sp" android:textColor="#ffffa200" android:gravity="center" android:id="@id/afternoonteatitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="缤纷下午茶" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/afternoonteadefault" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

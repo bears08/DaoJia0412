@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/navigation_food" layout="@layout/navigation_food" />
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/mviewpager" android:background="#ffffffff" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="30" />
+</LinearLayout>

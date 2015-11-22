@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffe72b48" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <EditText android:textSize="16.0sp" android:textColorHint="#ffbfbfbf" android:ellipsize="end" android:id="@id/keyword" android:background="@drawable/ic_search_bg" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:hint="@string/prompt_foodsearch_keyword_empty" android:singleLine="true" android:drawableLeft="@drawable/magnifier" android:layout_weight="1.0" android:imeOptions="actionDone" />
+        <Button android:textSize="17.0sp" android:textColor="@android:color/white" android:layout_gravity="center|right" android:id="@id/back_button" android:background="@drawable/suggest_right_button_selector" android:layout_width="47.0dip" android:layout_height="fill_parent" android:text="@string/label_done" />
+    </LinearLayout>
+    <ListView android:id="@id/sreach_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textColor="#ffbfbfbf" android:gravity="center_horizontal" android:id="@id/no_match" android:paddingTop="50.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/prompt_food_no_match" />
+</LinearLayout>

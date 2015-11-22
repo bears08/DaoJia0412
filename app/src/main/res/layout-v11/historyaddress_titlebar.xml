@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="#ffe72b48" android:layout_width="fill_parent" android:layout_height="48.0dip" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/left_button" android:paddingLeft="10.0dip" android:paddingRight="8.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/go_back_selector" android:layout_centerVertical="true" />
+    <TextView android:textSize="21.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:drawableRight="@drawable/switchaddress" android:drawablePadding="3.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

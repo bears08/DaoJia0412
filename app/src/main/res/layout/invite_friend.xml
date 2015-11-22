@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_invite" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="13.0dip">
+                <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/invite_friend_img" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                <TextView android:textSize="13.0sp" android:id="@id/img_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="19.0dip" android:text="邀请新伙伴来到家品尝美食，TA首次下单满50立减20，当TA完成首单后，您也将获得满50减20的优惠券哦！" android:layout_alignBottom="@id/img" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="17.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_b" android:id="@id/share_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_title" android:layout_centerInParent="true" />
+                <ImageView android:background="@color/gray_c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/share_title" android:layout_centerVertical="true" />
+                <ImageView android:background="@color/gray_c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/share_title" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="17.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/friend_circle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/invite_friend_circle" />
+                    <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/label_wechat_circle" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/weChat" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/invite_wechat" />
+                    <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/label_wechat" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/sms" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/invite_sms" />
+                    <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/label_sms" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/link" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/invite_link" />
+                    <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/label_link" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="17.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/gray_b" android:id="@id/rule_illustrate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rule_illustrate" android:layout_centerInParent="true" />
+                <ImageView android:background="@color/gray_c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/rule_illustrate" android:layout_centerVertical="true" />
+                <ImageView android:background="@color/gray_c" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/rule_illustrate" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                    <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1." />
+                    <TextView android:textSize="12.0sp" android:id="@id/rule_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rule_1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                    <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2." />
+                    <TextView android:textSize="12.0sp" android:id="@id/rule_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rule_2" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                    <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3." />
+                    <TextView android:textSize="12.0sp" android:id="@id/rule_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rule_3" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                    <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4." />
+                    <TextView android:textSize="12.0sp" android:id="@id/rule_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rule_4" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5." />
+                    <TextView android:textSize="12.0sp" android:id="@id/rule_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rule_5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

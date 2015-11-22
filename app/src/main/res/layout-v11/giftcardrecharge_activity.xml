@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/login_list1" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="礼品卡号：" />
+                <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/et_giftnum" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:hint="请输入礼品卡号" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/login_list2" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="密        码：" />
+                <EditText android:textSize="14.0sp" android:textColorHint="#ffbfbfbf" android:id="@id/et_cardpassword" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:hint="请输入礼品卡密码" android:singleLine="true" android:layout_weight="1.0" android:inputType="textPassword" />
+            </LinearLayout>
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/buto_comple" android:background="@drawable/login_button_selector" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="完成" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

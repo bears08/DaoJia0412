@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/share"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@id/sina"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:gravity="center_horizontal"
+                android:src="@drawable/umeng_socialize_sina_on" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/label_sina" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/wechat_circle"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:gravity="center_horizontal"
+                android:src="@drawable/umeng_socialize_wxcircle" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/label_wechat_circle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/wechat"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:gravity="center_horizontal"
+                android:src="@drawable/umeng_socialize_wechat" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/label_wechat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/qzone"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="70.0dip"
+                android:gravity="center_horizontal"
+                android:src="@drawable/umeng_socialize_qzone_on" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/label_qzone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@id/cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10.0dip"
+        android:text="@string/label_cancel"
+        android:textColor="#ffe72b48"
+        android:textSize="20.0sp" />
+</LinearLayout>

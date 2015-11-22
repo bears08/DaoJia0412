@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/list_item_pressed" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tope_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/manuallyenteraddress" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/locationaddressselected" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_city_current" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/locationaddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="地对地导弹" android:singleLine="true" android:layout_toLeftOf="@id/locationaddressselected" android:layout_toRightOf="@id/location" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffbfbfbf" android:id="@id/locationsugest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="地对地导弹" android:singleLine="true" android:layout_below="@id/locationaddress" android:layout_alignLeft="@id/locationaddress" />
+    </RelativeLayout>
+</RelativeLayout>

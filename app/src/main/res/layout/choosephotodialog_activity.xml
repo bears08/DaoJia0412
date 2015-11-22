@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/balancepayment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:background="@drawable/balancepayment_title_bg" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingRight="5.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/choose_photo" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/BDark" android:gravity="center_horizontal" android:id="@id/select_camer" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_camer" />
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/BDark" android:gravity="center_horizontal" android:id="@id/select_picture" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_picture" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/select_cancel" android:background="@drawable/login_button_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/label_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

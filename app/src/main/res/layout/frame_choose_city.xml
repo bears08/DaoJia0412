@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffbfbfbf" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="请选择您所在的城市" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/city_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffbfbfbf" android:gravity="center" android:background="@drawable/ic_list_item_bg" android:layout_width="fill_parent" android:layout_height="58.0dip" android:text="更多城市敬请期待……" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_pressed" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="#ff000000" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="开启短信验证支付：" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_openmessagever" android:paddingRight="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/chenjin_static_open" />
+    </LinearLayout>
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="#ff98989d" android:gravity="left" android:id="@id/tv_text" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/view_line" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_setmoney" android:background="@drawable/list_item_pressed" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="#ff000000" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="设置短信验证金额" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffcccccc" android:layout_gravity="center_vertical" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingRight="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+    </LinearLayout>
+    <View android:id="@id/view_line1" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

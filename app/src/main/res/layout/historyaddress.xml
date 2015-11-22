@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/historyaddress_titlebar" />
+    <LinearLayout android:gravity="center_vertical" android:background="#ffe72b48" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <com.daojia.widget.AddressEditText android:textSize="13.0sp" android:textColorHint="#ffbfbfbf" android:ellipsize="end" android:id="@id/new_address" android:background="@drawable/ic_search_bg" android:paddingLeft="5.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="搜索送餐地址,如小区,大厦,学校或街道" android:singleLine="true" android:drawableLeft="@drawable/addresssearch" android:drawablePadding="3.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/locationaddress" android:background="@drawable/list_item_pressed" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ffe72b48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定位当前地址" android:drawableLeft="@drawable/locationaddress" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/list_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="#ffbfbfbf" android:gravity="center_vertical" android:id="@id/match_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip" android:text="我的送餐地址" android:maxLength="20" />
+        <ListView android:id="@id/my_address_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/rl_emptyprompt" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/text_empty" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/suggest_list_empty" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

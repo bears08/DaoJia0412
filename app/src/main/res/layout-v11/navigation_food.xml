@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/navigation_bar" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="48.0dip" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/left_button" android:layout_width="50.0dip" android:layout_height="48.0dip">
+        <ImageView android:paddingLeft="10.0dip" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/food_back_selecter" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="200.0dip" android:layout_height="48.0dip" android:layout_toLeftOf="@id/right_button" android:layout_toRightOf="@id/left_button" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/rg_nav_content" android:layout_width="150.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/choose_dishes" android:layout_width="75.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <TextView android:textSize="18.0sp" android:textColor="@drawable/food_navigation_text_bg" android:gravity="center" android:id="@id/choose_dishes_tv" android:layout_width="54.0dip" android:layout_height="fill_parent" android:text="@string/choose_dishes" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/middleSpace" android:layout_width="42.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/restaurant" android:layout_width="75.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <TextView android:textSize="18.0sp" android:textColor="@drawable/food_navigation_text_bg" android:gravity="center" android:id="@id/restaurant_tv" android:layout_width="54.0dip" android:layout_height="fill_parent" android:text="@string/food_restaurant" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/restaurant_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dip" android:layout_toRightOf="@id/rg_nav_content" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="150.0dip" android:layout_height="2.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/iv_nav_indicator" android:background="#ffe72b48" android:layout_width="54.0dip" android:layout_height="2.0dip" android:scaleType="matrix" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/right_button" android:paddingRight="10.0dip" android:focusable="false" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="48.0dip" android:src="@drawable/back_red" android:layout_alignParentRight="true" />
+    <ImageView android:background="@color/round" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="@color/round" android:layout_alignParentBottom="true" />
+</RelativeLayout>

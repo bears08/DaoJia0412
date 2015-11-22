@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/navigation_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/left_button" android:paddingLeft="10.0dip" android:paddingRight="8.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/food_back_selecter" />
+    <TextView android:textSize="21.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:focusable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/right_button" android:background="@drawable/suggest_right_normal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:paddingRight="5.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_city_current" />
+        <TextView android:textSize="16.0sp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_affirm" />
+    </LinearLayout>
+</LinearLayout>

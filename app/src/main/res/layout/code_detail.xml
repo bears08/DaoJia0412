@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_white" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list_item_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ffbfbfbf" android:gravity="center|right" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名        称:" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center|right" android:id="@id/discretion" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送餐立减10元" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list_item_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ffbfbfbf" android:gravity="center|right" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠代码:" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center|right" android:id="@id/name" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FGHJKKHK" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list_item_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ffbfbfbf" android:gravity="center|right" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单金额:" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center|right" android:id="@id/limit" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单超过20元可用" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list_item_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ffbfbfbf" android:gravity="center|right" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时        段:" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/use_time" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="节假日，上午，" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list_item_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ffbfbfbf" android:gravity="center|right" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用方式:" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center|right" android:id="@id/use_type" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机，网站" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list_item_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ffbfbfbf" android:gravity="center|right" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用次数:" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center|right" android:id="@id/could_use_times" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2次" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list_item_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ffbfbfbf" android:gravity="center|right" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效期至:" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center|right" android:id="@id/end_time" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014年09月19日" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ic_list_item_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ffbfbfbf" android:gravity="top" android:layout_gravity="top" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="适用餐厅:" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/use_area" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

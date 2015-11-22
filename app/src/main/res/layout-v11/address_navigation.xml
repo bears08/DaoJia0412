@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/navigation_bar" android:background="#ffe72b48" android:layout_width="fill_parent" android:layout_height="48.0dip" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="17.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/left_button" android:background="@drawable/suggest_right_button_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="frfsdf" />
+    <TextView android:textSize="21.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="sertrewew" android:singleLine="true" android:layout_centerInParent="true" />
+    <Button android:textSize="17.0sp" android:textColor="@android:color/white" android:id="@id/right_button" android:background="@drawable/suggest_right_button_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/label_done" android:layout_alignParentRight="true" />
+</RelativeLayout>
